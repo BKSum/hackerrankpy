@@ -17,6 +17,6 @@ def modifyList(task, list):
 if __name__ == '__main__':
     N = int(raw_input())
     outputList = []
-    for i in range(0,N):
+    for i in range(0, N):
         s = str(raw_input())
         modifyList(s, outputList)

@@ -4,9 +4,9 @@ scoreList = []
 for _ in range(int(raw_input())):
     name = raw_input()
     score = float(raw_input())
-    students.append([name,score])
+    students.append([name, score])
     scoreList.append(score)
-#students.sort(key=lambda x:x[1])
+# students.sort(key=lambda x:x[1])
 scoreSet = sorted(set(scoreList))
 studentSecondLowestGrade = [x[0] for x in students if x[1] == scoreSet[1]]
 studentSecondLowestGrade.sort()
